@@ -1,0 +1,228 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif; 
+  color: #fff;
+}
+
+:root {
+  --bg-color: #000000;
+  --second-bg-color: rgb(36, 37, 37);
+  --text-color: #fff;
+  --main-color: #0ef;
+  --second-main-color:#0C7B93;
+  --third-main-color:#27496D;
+  --fouth-main-color:#142850;
+} 
+body {
+  background: var(--third-main-color);
+  color: var(--text-color);
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
+    url(img/background_img/IMG20230921194023.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: change 60s ease-in-out infinite;
+}
+
+@keyframes change {
+  0% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
+      url(img/background_img/IMG20230921194023.jpg);
+  }
+  20% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
+      url(img/background_img/bicycle-1280x720.jpg);
+  }
+  40% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
+      url(img/background_img/Burj-Khalifa-skyscraper-in-City-Dubai-United-Arab-Emirates-4K-Ultra-HD-Desktop-Wallpapers-for-Computers-Laptop-Tablet-And-Mobile-Phones-3840x2400-1920x1200.jpg);
+  }
+  60% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
+      url(img/background_img/517669.jpg);
+  }
+  80% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
+      url(img/background_img/5487146.jpg);
+  }
+  100% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
+      url(img/background_img/6895209.webp);
+  }
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+section {
+  height: auto;
+  /* padding: 10rem 9% 2rem; */
+}
+
+
+/* home css */
+
+.home {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    height: 110vh;
+    padding: 10rem 9% 2rem;
+  }
+
+  .notice {
+    width: 100%;
+    /* height: 380px; */
+    /* box-shadow: 3px 3px 15px black; */
+    border-radius: 25px;
+    margin: 1%;
+    margin-top: 5%;
+    background: transparent;
+    border: dashed 5px var(--main-color); 
+    height: auto;
+  }
+
+  .notice h1 {
+    padding: 15px;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .notice hr{
+    height:2px;
+    border-width:0;
+    color:gray;
+    background-color:gray;
+    width: auto;   
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .notice-content{
+    font-size: medium; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 9%;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    list-style: initial;
+  }
+
+  .home-img .notice {
+    width: 22vw;
+    margin-right: 5vw;
+    height: auto; 
+    animation: floatImage 4s ease-in-out infinite; 
+    /* animation-delay: 4s ; */
+    /* animation: bringImage 2s ease-in-out 1 ; */
+  } 
+
+  .home-img .notice:hover{
+    animation-play-state: paused;
+  }
+
+  /* @keyframes bringImage {
+    0% {
+      transform: translateY(110vh);
+      display: none;
+    }
+    50% {
+      transform: translateY(80vh);
+      display: block;
+    }
+    100% {
+      transform: translateY(0);
+      display: block;
+    }
+  } */
+
+  @keyframes floatImage {
+    0% {
+      transform: translateY(0vh); 
+    }
+    50% {
+      transform: translateY(-2.4rem); 
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+
+  .home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+  }
+
+  .home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .home-content p {
+    font-size: 1.6rem;
+    width: 40%;
+  }
+
+  .social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.5s ease;
+  }
+
+  .social-media a:hover {
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+  }
+  .social-media i {
+    font-size: large;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    color: var(--second-bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 550;
+    transition: 0.5s ease;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+  }
+
+  .btn:hover {
+    box-shadow: none;
+  }
+
+  /* home css */
+
+  
